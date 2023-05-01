@@ -5,6 +5,10 @@
   display: flex;
   gap: 32px;
   padding-bottom: 64px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
 }
 .location-item {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -12,21 +16,32 @@
   background-color: #fcfcfc;
   width: 368px;
   padding: 40px;
-  justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-top: -303px;
+  font-weight: 500;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 40px 24px;
+  }
 }
 .location-name {
   background-color: var(--accent-color);
-  font-weight: 500;
-  margin-top: 40px;
-  margin-bottom: 32px;
+  padding: 3px 9px;
+  border-radius: 6px;
+  width: fit-content;
 }
 
 .address {
   color: var(--text-accent-color);
   margin-top: 8px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+}
+.address:hover {
+  text-decoration: underline;
 }
 .working-days {
   color: var(--dark-text-color);
@@ -34,7 +49,7 @@
   margin-bottom: 4px;
 }
 .working-hours {
-  color: var(--footer-text-light);
+  color: var(--disabled);
 }
 .open-hours {
   margin-bottom: 12px;
@@ -47,6 +62,10 @@
 .location-btn {
   text-align: center;
   padding-bottom: 120px;
+  margin-bottom: -1px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 40px;
+  }
 }
 .location-btn button {
   font-weight: 600;
@@ -60,9 +79,25 @@
   padding: 12px 34px;
   margin-right: 16px;
   background-color: var(--accent-color);
+  &:hover {
+    background-color: var(--hover-btn);
+  }
+  &:focus {
+    background-color: var(--hover-btn);
+    color: var(--light-text-color);
+  }
 }
+
 .franchise-btn {
   padding: 12px 46px;
   border: 2px solid var(--accent-color);
   background-color: var(--main-background);
+
+  &:hover {
+    border: 2px solid var(--hover-btn);
+  }
+  &:focus {
+    border: 2px solid var(--hover-btn);
+    color: var(--light-text-color);
+  }
 }

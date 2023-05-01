@@ -2,25 +2,42 @@
   background-image: url(/src/images/background-4.jpg);
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 .feedback-img {
-  position: absolute;
   border-radius: 24px;
-  left: 93px;
-  top: -98px;
+  width: 1013px;
+  height: 422px;
+  position: absolute;
+  margin-top: -93px;
+  // margin-left: 94px;
+  // margin-right: 94px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 704px;
+    height: 327px;
+    margin-top: -163px;
+  }
 }
 .client-feedback {
-  padding-top: 452px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 32px;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
+  padding-top: 223px;
+  padding-bottom: 383px;
 }
 
 .feedback-text {
-  font-size: 24px;
+  font-weight: 500;
   line-height: 1.87;
+  border-radius: 24px;
+  color: var(--light-text-color);
+  background-color: var(--main-background);
+  padding: 40px 74px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-style: 14px;
+    padding: 30px 80px;
+  }
 }

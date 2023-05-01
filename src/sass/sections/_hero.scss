@@ -49,11 +49,23 @@
   margin-right: 12px;
   padding: 12px 34px;
   color: var(--dark-text-color);
+  &:hover {
+    border-color: var(--hover-btn);
+  }
+  &:focus {
+    color: var(--light-text-color);
+  }
 }
 .how-made-link {
   padding: 12px 34px;
   color: var(--accent-color);
   text-decoration: underline;
+  &:hover {
+    color: var(--hover-btn);
+  }
+  &:focus {
+    color: var(--light-text-color);
+  }
 }
 .hero-img-block {
   display: flex;

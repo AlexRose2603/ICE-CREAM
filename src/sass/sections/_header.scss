@@ -47,4 +47,12 @@ header {
   border-color: var(--accent-color);
   border-radius: 10px;
   border-style: none;
+
+  &:hover {
+    background-color: var(--hover-btn);
+  }
+  &:focus {
+    background-color: var(--hover-btn);
+    color: var(--light-text-color);
+  }
 }
