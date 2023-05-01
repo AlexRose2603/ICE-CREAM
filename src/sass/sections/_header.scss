@@ -1,0 +1,50 @@
+header {
+  background-color: var(--main-background);
+  margin-bottom: -1px;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 8px;
+}
+.logo-letters {
+  font-family: 'Seymour One';
+  font-size: 28px;
+  line-height: 27px;
+  margin-left: -23px;
+  text-align: center;
+  letter-spacing: -0.1em;
+  color: var(--accent-color);
+}
+.menu {
+  font-weight: 700;
+  line-height: 1.25;
+  display: flex;
+  gap: 27px;
+  justify-content: center;
+  align-items: center;
+}
+.menu-link {
+  color: var(--light-text-color);
+}
+.menu-link:hover {
+  color: var(--accent-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+.buy-btn {
+  padding: 12px 34px;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 10px;
+  border-style: none;
+}

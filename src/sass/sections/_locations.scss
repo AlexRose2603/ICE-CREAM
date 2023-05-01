@@ -1,0 +1,68 @@
+.locations {
+  background-color: var(--main-background);
+}
+.locations-list {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 64px;
+}
+.location-item {
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  background-color: #fcfcfc;
+  width: 368px;
+  padding: 40px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.location-name {
+  background-color: var(--accent-color);
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+.address {
+  color: var(--text-accent-color);
+  margin-top: 8px;
+}
+.working-days {
+  color: var(--dark-text-color);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.working-hours {
+  color: var(--footer-text-light);
+}
+.open-hours {
+  margin-bottom: 12px;
+}
+.dividing-line {
+  border: 1px solid #e1e1e1;
+  height: 0px;
+  display: block;
+}
+.location-btn {
+  text-align: center;
+  padding-bottom: 120px;
+}
+.location-btn button {
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.28;
+  cursor: pointer;
+}
+.btn-link {
+  border-style: none;
+  padding: 12px 34px;
+  margin-right: 16px;
+  background-color: var(--accent-color);
+}
+.franchise-btn {
+  padding: 12px 46px;
+  border: 2px solid var(--accent-color);
+  background-color: var(--main-background);
+}

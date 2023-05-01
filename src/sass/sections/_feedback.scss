@@ -1,0 +1,26 @@
+.feedback {
+  background-image: url(/src/images/background-4.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.feedback-img {
+  position: absolute;
+  border-radius: 24px;
+  left: 93px;
+  top: -98px;
+}
+.client-feedback {
+  padding-top: 452px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+  padding-bottom: 100px;
+}
+
+.feedback-text {
+  font-size: 24px;
+  line-height: 1.87;
+}

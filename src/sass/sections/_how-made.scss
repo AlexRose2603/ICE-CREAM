@@ -1,0 +1,106 @@
+.how-made {
+  background-color: var(--main-background);
+}
+.hm-name,
+.hm-title {
+  text-transform: uppercase;
+  color: var(--light-text-color);
+  text-align: center;
+}
+.hm-name {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.23;
+  margin-bottom: 12px;
+  padding-top: 60px;
+}
+.hm-title {
+  font-family: 'Seymour One', sans-serif;
+  font-size: 36px;
+  line-height: 1.25;
+  margin-bottom: 122px;
+}
+.hm-eclipse {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 16px;
+  top: 2040px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  border-radius: 250px;
+}
+.hm-img {
+  border-radius: 50%;
+  position: relative;
+  margin-right: 100px;
+}
+.hm-block {
+  display: flex;
+}
+.hm-text {
+  width: 463px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--light-text-color);
+}
+.read-more-btn {
+  margin-top: 40px;
+  padding: 12px 34px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  border-width: 0;
+  cursor: pointer;
+}
+.read-more-btn:hover {
+  background-color: var(--hover-btn);
+}
+.read-more-btn:focus {
+  color: var(--light-text-color);
+}
+.hm-statistics {
+  display: flex;
+  padding-bottom: 180px;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 60px;
+}
+.hm-stat-item {
+  width: 368px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.back-svg {
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-amount {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 1.22;
+  color: var(--light-text-color);
+  margin-bottom: 16px;
+}
+.stats-info {
+  color: var(--light-text-color);
+  letter-spacing: 0.02em;
+}

@@ -1,0 +1,135 @@
+.products {
+  background-image: url(/src/images/bckgr-1x.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+  padding-bottom: 66px;
+}
+.products-title {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.23;
+  text-align: center;
+  margin: auto;
+  width: 330px;
+  margin-bottom: 303px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+.title-part {
+  font-family: 'Seymour One', sans-serif;
+  font-size: 36px;
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 34px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 30px;
+  }
+}
+.choice-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.choice-item:first-child {
+  background-color: var(--main-background);
+}
+.choice-item:first-child .eclipse {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #84a178;
+  box-shadow: 0px 8px 30px rgba(32, 51, 34, 0.25);
+}
+.choice-item {
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--card-accent);
+  border-radius: 24px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 224px;
+  }
+}
+.eclipse {
+  width: 302px;
+  height: 300px;
+  border-radius: 145px;
+  margin: -172px auto -35px;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 202px;
+    height: 200px;
+    margin-top: -113px;
+  }
+}
+.choice-item:last-child {
+  background-color: var(--text-accent-color);
+}
+.choice-item:last-child .eclipse {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.choice-img {
+  border-radius: 50%;
+  margin: -315px auto 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 202px;
+    height: 200px;
+    margin-top: -215px;
+  }
+}
+.choice-name {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 32px;
+  margin-bottom: 65px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 22px;
+  }
+}
+.choice-descr {
+  text-align: center;
+  margin: auto;
+  padding: 0 64px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+    padding: 0 26px;
+  }
+}

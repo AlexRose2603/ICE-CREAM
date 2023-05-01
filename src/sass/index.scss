@@ -1,2 +1,9 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './utils/variables';
+@import './sections/header';
+@import './sections/hero';
+@import './sections/products';
+@import './sections/how-made';
+@import './sections/feedback.scss';
+@import './sections/locations';
+@import './sections/footer';
