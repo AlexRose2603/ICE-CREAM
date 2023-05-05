@@ -8,14 +8,12 @@
   width: 1013px;
   height: 422px;
   position: absolute;
-  margin-top: -93px;
-  // margin-left: 94px;
-  // margin-right: 94px;
+  margin: -93px 94px 0;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 704px;
     height: 327px;
-    margin-top: -163px;
+    margin: -163px 32px 0;
   }
 }
 .client-feedback {
@@ -25,8 +23,11 @@
   text-align: center;
   gap: 32px;
   margin-bottom: 100px;
-  padding-top: 223px;
+  padding-top: 457px;
   padding-bottom: 383px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 223px;
+  }
 }
 
 .feedback-text {

@@ -85,12 +85,39 @@
   margin-left: auto;
   fill: var(--light-text-color);
 }
-.ice-hero,
+
 .ice-hero-img {
   width: 450px;
   height: 561px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 257px;
+    height: 325px;
+  }
 }
 .ice-hero {
   margin-right: 40px;
   margin-left: 200px;
+  position: relative;
+}
+.smile-green {
+  position: absolute;
+  width: 200px;
+  height: 170px;
+  left: 210px;
+  top: 20px;
+}
+.smile-pink {
+  position: absolute;
+  width: 200px;
+  height: 180px;
+  left: 240px;
+  top: 220px;
+}
+.smile-yellow {
+  position: absolute;
+  width: 160px;
+  height: 140px;
+  left: 80px;
+  top: 135px;
 }

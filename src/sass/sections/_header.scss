@@ -29,6 +29,9 @@ header {
   gap: 27px;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    display: none;
+  }
 }
 .menu-link {
   color: var(--light-text-color);
@@ -47,7 +50,9 @@ header {
   border-color: var(--accent-color);
   border-radius: 10px;
   border-style: none;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
     background-color: var(--hover-btn);
   }
@@ -55,4 +60,19 @@ header {
     background-color: var(--hover-btn);
     color: var(--light-text-color);
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 32px;
+  }
+}
+
+.mob-btn {
+  background-color: var(--main-background);
+  border-width: 0;
+  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.next-svg {
+  rotate: 90deg;
 }
