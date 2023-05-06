@@ -89,6 +89,7 @@
   &:focus {
     background-color: var(--hover-btn);
     color: var(--light-text-color);
+    fill: var(--light-text-color);
   }
 }
 
@@ -105,5 +106,6 @@
   &:focus {
     border: 2px solid var(--hover-btn);
     color: var(--light-text-color);
+    fill: var(--light-text-color);
   }
 }

@@ -18,6 +18,24 @@
   text-transform: uppercase;
   width: 367px;
   color: var(--light-text-color);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 18px;
+    width: 180px;
+  }
+}
+.hero-title span {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-weight: 400;
+    line-height: 0.8;
+    font-size: 28px;
+    padding-top: 6px;
+    display: inline-block;
+  }
+}
+.hero-places {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .amount {
   font-weight: 900;
@@ -27,6 +45,9 @@
   display: flex;
   flex-direction: column;
   text-align: end;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 28px;
+  }
 }
 .place {
   font-weight: 400;
@@ -34,14 +55,24 @@
   line-height: 1.21;
   color: var(--light-text-color);
   text-align: end;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 8px;
+  }
 }
 .hero-links {
   margin-bottom: 42px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 28px;
+  }
 }
 .hero-links a {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.12;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 8px;
+    line-height: 1.25;
+  }
 }
 .products-link {
   border: 2px solid var(--accent-color);
@@ -55,6 +86,10 @@
   &:focus {
     color: var(--light-text-color);
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+    padding: 8px 12px;
+  }
 }
 .how-made-link {
   padding: 12px 34px;
@@ -66,22 +101,48 @@
   &:focus {
     color: var(--light-text-color);
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 8px 0;
+  }
 }
 .hero-img-block {
   display: flex;
   align-items: center;
   gap: 14px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.ice-plate {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 152px;
+    height: 152px;
+  }
+}
+
+.text-arrow {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 33px;
+    margin-right: 50px;
+  }
 }
 .hero-text {
   font-size: 14px;
   width: 200px;
   line-height: 1.42;
   color: var(--light-text-color);
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12px;
+    width: 150px;
+    margin-bottom: 20px;
+  }
 }
 
 .arrow {
   width: 40px;
-  margin-top: 32px;
+  // margin-top: 32px;
   margin-left: auto;
   fill: var(--light-text-color);
 }
@@ -94,11 +155,18 @@
     width: 257px;
     height: 325px;
   }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 157px;
+    height: 207px;
+  }
 }
 .ice-hero {
   margin-right: 40px;
   margin-left: 200px;
   position: relative;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 50px;
+  }
 }
 .smile-green {
   position: absolute;
@@ -106,6 +174,13 @@
   height: 170px;
   left: 210px;
   top: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 110px;
+    height: 120px;
+    left: 130px;
+    top: 0;
+  }
 }
 .smile-pink {
   position: absolute;
@@ -113,6 +188,12 @@
   height: 180px;
   left: 240px;
   top: 220px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 120px;
+    height: 140px;
+    left: 125px;
+    top: 110px;
+  }
 }
 .smile-yellow {
   position: absolute;
@@ -120,4 +201,10 @@
   height: 140px;
   left: 80px;
   top: 135px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 100px;
+    height: 110px;
+    left: 40px;
+    top: 55px;
+  }
 }
