@@ -9,6 +9,10 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 60px;
   }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    flex-direction: column;
+    gap: 322px;
+  }
 }
 .location-item {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -23,6 +27,19 @@
   font-weight: 500;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 40px 24px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 280px;
+    padding: 40px 32px;
+    gap: 24px;
+    font-size: 12px;
+    line-height: 1.83;
+  }
+}
+
+.location-item:first-child {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-top: -405px;
   }
 }
 .location-name {
@@ -39,13 +56,15 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
   }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 190px;
+  }
 }
 .address:hover {
   text-decoration: underline;
 }
 .working-days {
   color: var(--dark-text-color);
-  font-weight: 500;
   margin-bottom: 4px;
 }
 .working-hours {
@@ -65,6 +84,11 @@
   padding-bottom: 120px;
   margin-bottom: -1px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    flex-direction: column;
+    gap: 16px;
     padding-bottom: 40px;
   }
 }
@@ -90,6 +114,9 @@
     background-color: var(--hover-btn);
     color: var(--light-text-color);
     fill: var(--light-text-color);
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-right: 0;
   }
 }
 

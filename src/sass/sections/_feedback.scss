@@ -15,6 +15,11 @@
     height: 327px;
     margin: -163px 32px 0;
   }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 280px;
+    height: 130px;
+    margin: -30px 32px 0;
+  }
 }
 .client-feedback {
   display: flex;
@@ -28,6 +33,9 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 223px;
   }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-top: 186px;
+  }
 }
 
 .feedback-text {
@@ -37,8 +45,13 @@
   color: var(--light-text-color);
   background-color: var(--main-background);
   padding: 40px 74px;
+  text-align: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-style: 14px;
-    padding: 30px 80px;
+    padding: 28px 80px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding: 34px 39px;
+    line-height: 2.6;
   }
 }
