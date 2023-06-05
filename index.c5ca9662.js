@@ -1,0 +1,2 @@
+var backdrop=document.querySelector(".backdrop"),modal=document.querySelector(".modal"),buyButton=document.querySelector(".buy-btn"),closeButton=document.querySelector(".modal-close-btn"),openModal=function(){backdrop.classList.remove("is-hidden"),modal.classList.remove("is-hidden")},closeModal=function(){backdrop.classList.add("is-hidden"),modal.classList.add("is-hidden")};buyButton.addEventListener("click",openModal),closeButton.addEventListener("click",closeModal);
+//# sourceMappingURL=index.c5ca9662.js.map
