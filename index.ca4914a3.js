@@ -1,2 +1,0 @@
-var burgerMenu=document.querySelector(".burger-menu"),burgerOpenBtn=document.querySelector(".burger-modal-open"),burgerCloseBtn=document.querySelector(".burger-modal-close-btn"),openBurgerMenu=function(){burgerMenu.classList.remove("is-hidden"),burgerMenu.classList.add("open")},closeBurgerMenu=function(){burgerMenu.classList.add("is-hidden"),burgerMenu.classList.remove("open")};burgerOpenBtn.addEventListener("click",openBurgerMenu),burgerCloseBtn.addEventListener("click",closeBurgerMenu);
-//# sourceMappingURL=index.ca4914a3.js.map

@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector(".backdrop"),d=document.querySelector(".modal"),c=document.querySelector(".buy-btn"),t=document.querySelector(".modal-close-btn");c.addEventListener("click",(function(){e.classList.remove("is-hidden"),d.classList.remove("is-hidden")})),t.addEventListener("click",(function(){e.classList.add("is-hidden"),d.classList.add("is-hidden")}))}();
-//# sourceMappingURL=index.d65c4ab0.js.map
