@@ -1,7 +1,7 @@
 const franchiseBackdrop = document.querySelector('.franchise-backdrop');
 const franchiseModal = document.querySelector('.franchise-modal');
 const closeFranchiseBtn = document.querySelector('.franchise-close-btn');
-const franchiseBtn = document.querySelector('.btn-link');
+const franchiseBtn = document.querySelector('.franchise-btn');
 console.log(franchiseModal);
 // Function to open the modal
 const openFranchiseModal = () => {
