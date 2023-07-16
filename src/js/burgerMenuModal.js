@@ -1,5 +1,6 @@
 const burgerMenu = document.querySelector('.burger-menu');
 const burgerOpenBtn = document.querySelector('.burger-modal-open');
+const mobileClose = document.querySelector('.mobile-open-modal');
 const burgerCloseBtn = document.querySelector('.burger-modal-close-btn');
 
 // Function to open burger menu
@@ -17,3 +18,4 @@ const closeBurgerMenu = () => {
 // Add event listeners to open and close the burger menu
 burgerOpenBtn.addEventListener('click', openBurgerMenu);
 burgerCloseBtn.addEventListener('click', closeBurgerMenu);
+mobileClose.addEventListener('click', closeBurgerMenu);

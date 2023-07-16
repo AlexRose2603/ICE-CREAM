@@ -1,7 +1,7 @@
 header {
   background-color: var(--main-background);
   margin-bottom: -1px;
-  width: 100%;
+  min-width: 100%;
 }
 
 .navigation {
@@ -106,7 +106,7 @@ header {
   background-color: var(--main-background);
   border-width: 0;
   margin-left: auto;
-  margin-right: 20px;
+  // margin-right: 20px;
   margin-top: 30px;
   @media screen and (min-width: 1200px) {
     display: none;
@@ -115,38 +115,3 @@ header {
 .next-svg {
   rotate: 90deg;
 }
-
-// .burger {
-//   background-color: var(--main-background);
-//   height: 100%;
-//   width: 100%;
-// }
-// .burger-menu {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   display: none;
-//   @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     padding-top: 140px;
-//     gap: 40px;
-//   }
-//   @media screen and (min-width: 320px) and (max-width: 767px) {
-//     margin-top: 100px;
-//     gap: 32px;
-//   }
-// }
-// .logo-burger {
-//   display: flex;
-// }
-// .burger-menu-link {
-//   color: var(--light-text-color);
-//   font-weight: 700;
-//   font-size: 48px;
-//   &:focus {
-//     color: black;
-//   }
-//   @media screen and (min-width: 320px) and (max-width: 767px) {
-//     font-size: 32px;
-//   }
-// }
