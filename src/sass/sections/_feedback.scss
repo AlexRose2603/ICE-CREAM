@@ -2,56 +2,93 @@
   background-image: url(/src/images/background-4.jpg);
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .feedback-img {
   border-radius: 24px;
   width: 1013px;
   height: 422px;
-  position: absolute;
-  margin: -93px 94px 0;
+  margin: 0 auto 123px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 704px;
     height: 327px;
-    margin: -163px 32px 0;
+    margin: 0 auto 55px;
   }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     width: 280px;
     height: 130px;
-    margin: -30px 18px 0;
+    margin: 0 auto;
   }
 }
 .client-feedback {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   gap: 32px;
   margin-bottom: 100px;
-  padding-top: 457px;
   padding-bottom: 383px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-top: 223px;
+    // padding-top: 223px;
   }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    padding-top: 186px;
+    padding-top: 75px;
   }
 }
-
+.client-feedback img {
+  border-radius: 50%;
+}
 .feedback-text {
   font-weight: 500;
   line-height: 1.87;
   border-radius: 24px;
   color: var(--light-text-color);
   background-color: var(--main-background);
-  padding: 40px 74px;
+  padding: 39px 109px 47px;
+  width: 750px;
   text-align: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-style: 14px;
     padding: 28px 80px;
+    width: 545px;
   }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    padding: 34px 35px;
+    padding: 34px 39px;
     line-height: 2.6;
+    font-size: 12px;
+    width: 202px;
+  }
+}
+.name-city {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+.swiper-pagination {
+  padding-bottom: 420px;
+  display: inline-block;
+}
+.swiper-pagination-bullet {
+  background-color: var(--main-background);
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 18px;
+    height: 18px;
+  }
+}
+.swiper {
+  margin: -93px auto 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: -163px auto 0;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin: -33px auto 0;
   }
 }

@@ -140,18 +140,36 @@
   }
 }
 // modal
+.locations-modal {
+  @media screen and (max-width: 767px) {
+    height: 365px;
+    width: 280px;
+    overflow-y: hidden;
+  }
+}
 .map-info {
   padding: 12px 60px 32px;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    padding: 0 28px 28px;
+  }
 }
+
 .map-info iframe {
   width: 448px;
   height: 260px;
   margin-bottom: 32px;
+  border-radius: 10px;
+  @media screen and (max-width: 767px) {
+    width: 224px;
+    height: 199px;
+    margin-bottom: 24px;
+  }
 }
+
 .map-link {
   font-size: 14px;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-weight: 600;
   border-radius: 10px;
   padding: 12px 34px;
@@ -167,5 +185,8 @@
     background-color: var(--hover-btn);
     color: var(--light-text-color);
     fill: var(--light-text-color);
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
   }
 }

@@ -8,12 +8,14 @@ const buyNowCloseButton = document.querySelector('.modal-close-btn');
 const openBuyModal = () => {
   backdrop.classList.remove('is-hidden');
   buyModal.classList.remove('is-hidden');
+  document.body.classList.add('modal-open');
 };
 
 // Function to close the modal
 const closeBuyModal = () => {
   backdrop.classList.add('is-hidden');
   buyModal.classList.add('is-hidden');
+  document.body.classList.add('modal-open');
 };
 
 // Event listener for the buy button

@@ -8,12 +8,14 @@ console.log(readMoreModal);
 const openReadMoreModal = () => {
   readBackdrop.classList.remove('is-hidden');
   readMoreModal.classList.remove('is-hidden');
+  document.body.classList.add('modal-open');
 };
 
 // Function to close the modal
 const closeReadMoreModal = () => {
   readBackdrop.classList.add('is-hidden');
   readMoreModal.classList.add('is-hidden');
+  document.body.classList.add('modal-open');
 };
 
 // Event listener for the read more button

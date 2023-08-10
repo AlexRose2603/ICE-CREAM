@@ -7,12 +7,14 @@ const locationsBtn = document.querySelector('.btn-link');
 const openLocationsModal = () => {
   locationsBackdrop.classList.remove('is-hidden');
   locationsModal.classList.remove('is-hidden');
+  document.body.classList.add('modal-open');
 };
 
 // Function to close the modal
 const closeLocationsModal = () => {
   locationsBackdrop.classList.add('is-hidden');
   locationsModal.classList.add('is-hidden');
+  document.body.classList.add('modal-open');
 };
 
 // Event listener for the read more button
