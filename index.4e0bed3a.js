@@ -1,0 +1,2 @@
+const e=document.querySelector(".backdrop"),d=document.getElementById("buy-modal"),t=document.querySelector(".buy-btn"),o=document.querySelector(".mobile-open-modal"),s=document.querySelector(".modal-close-btn"),c=()=>{e.classList.remove("is-hidden"),d.classList.remove("is-hidden"),document.body.classList.add("modal-open")};t.addEventListener("click",c),o.addEventListener("click",c),s.addEventListener("click",(()=>{e.classList.add("is-hidden"),d.classList.add("is-hidden"),document.body.classList.add("modal-open")}));
+//# sourceMappingURL=index.4e0bed3a.js.map
