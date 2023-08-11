@@ -1,6 +1,7 @@
 .products {
-  background-image: url(/src/images/bckgr-1x.png);
-  background-size: cover;
+  background-image: url(/src/images/background-1.jpg);
+  background-size: contain;
+  background-repeat: repeat;
   background-position: center;
   padding-top: 60px;
   padding-bottom: 66px;
