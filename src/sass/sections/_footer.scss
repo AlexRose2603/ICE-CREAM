@@ -93,18 +93,16 @@ footer .container {
   align-items: center;
   background-color: var(--accent-color);
   transition: 0.3s;
+  cursor: pointer;
 }
 .soc-svg {
   fill: var(--main-background);
 }
-.soc-item:hover {
-  width: 32px;
-  height: 32px;
-}
+.soc-item:hover,
 .soc-item:focus {
-  width: 35px;
-  height: 35px;
+  transform: scale(1.1);
 }
+
 .soc-item:hover .soc-svg,
 .soc-item:focus .soc-svg {
   fill: var(--light-text-color);

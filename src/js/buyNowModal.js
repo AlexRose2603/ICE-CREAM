@@ -15,8 +15,13 @@ const openBuyModal = () => {
 const closeBuyModal = () => {
   backdrop.classList.add('is-hidden');
   buyModal.classList.add('is-hidden');
-  document.body.classList.add('modal-open');
+  document.body.classList.remove('modal-open');
 };
+backdrop.addEventListener('click', function (event) {
+  if (event.target === backdrop) {
+    closeBuyModal();
+  }
+});
 
 // Event listener for the buy button
 buyButton.addEventListener('click', openBuyModal);

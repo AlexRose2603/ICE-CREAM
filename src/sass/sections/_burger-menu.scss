@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   background-color: var(--main-background);
-  width: 100vw;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   @media screen and (min-width: 1200px) {
     display: none;
   }
@@ -16,6 +16,7 @@
 }
 .burger-head {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
 }
 .burger-modal-close-btn {

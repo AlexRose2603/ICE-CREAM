@@ -14,9 +14,14 @@ const openLocationsModal = () => {
 const closeLocationsModal = () => {
   locationsBackdrop.classList.add('is-hidden');
   locationsModal.classList.add('is-hidden');
-  document.body.classList.add('modal-open');
+  document.body.classList.remove('modal-open');
 };
 
+locationsBackdrop.addEventListener('click', function (event) {
+  if (event.target === locationsBackdrop) {
+    closeLocationsModal();
+  }
+});
 // Event listener for the read more button
 locationsBtn.addEventListener('click', openLocationsModal);
 

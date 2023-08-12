@@ -59,14 +59,22 @@ body {
 .locations-backdrop,
 .franchise-backdrop {
   position: fixed;
+  z-index: 10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), visibility;
-  background-color: rgba(47, 48, 58, 0.4);
+  min-width: 100%;
+  min-height: 100%;
+  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), visibility;
+
+  // transition: margin-top 2s ease-in-out 0.5s;
+  background-color: rgba(103, 155, 133, 0.4);
 }
+
+.modal-open {
+  overflow: hidden;
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -82,9 +90,11 @@ body {
 .read-modal,
 .locations-modal,
 .franchise-modal {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--light-text-color);
   width: 568px;
   border: 2px solid var(--accent-color);
@@ -96,8 +106,7 @@ body {
   @media screen and(min-width: 320px) and (max-width: 767px) {
     width: 280px;
     height: 100vh;
-    // overflow: scroll;
-    z-index: 1000;
+    // z-index: 1000;
   }
 }
 .modal-close-btn,
@@ -114,6 +123,11 @@ body {
     margin-top: 8px;
     margin-right: 8px;
     padding: 0;
+  }
+
+  &:hover {
+    fill: var(--hover-btn);
+    transform: scale(1.2);
   }
 }
 .modal-title {
