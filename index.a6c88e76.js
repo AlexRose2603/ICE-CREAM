@@ -1,2 +1,0 @@
-const e=document.querySelector(".franchise-backdrop"),s=document.querySelector(".franchise-modal"),c=document.querySelector(".franchise-close-btn"),d=document.querySelector(".franchise-btn");console.log(s);d.addEventListener("click",(()=>{e.classList.remove("is-hidden"),s.classList.remove("is-hidden")})),c.addEventListener("click",(()=>{e.classList.add("is-hidden"),s.classList.add("is-hidden")}));
-//# sourceMappingURL=index.a6c88e76.js.map

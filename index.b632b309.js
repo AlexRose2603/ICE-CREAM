@@ -1,2 +1,0 @@
-const e=document.querySelector(".read-backdrop"),d=document.getElementById("read"),s=document.querySelector(".read-more-btn"),o=document.querySelector(".read-more-close-btn");console.log(d);s.addEventListener("click",(()=>{e.classList.remove("is-hidden"),d.classList.remove("is-hidden"),document.body.classList.add("modal-open")})),o.addEventListener("click",(()=>{e.classList.add("is-hidden"),d.classList.add("is-hidden"),document.body.classList.add("modal-open")}));
-//# sourceMappingURL=index.b632b309.js.map

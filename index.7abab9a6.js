@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector(".franchise-backdrop"),c=document.querySelector(".franchise-modal"),n=document.querySelector(".franchise-close-btn"),s=document.querySelector(".franchise-btn");console.log(c);s.addEventListener("click",(function(){e.classList.remove("is-hidden"),c.classList.remove("is-hidden")})),n.addEventListener("click",(function(){e.classList.add("is-hidden"),c.classList.add("is-hidden")}))}();
-//# sourceMappingURL=index.7abab9a6.js.map
