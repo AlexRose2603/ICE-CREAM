@@ -4,17 +4,15 @@ const buyButton = document.querySelector('.buy-btn');
 const mobileOpen = document.querySelector('.mobile-open-modal');
 const buyNowCloseButton = document.querySelector('.modal-close-btn');
 
-// Function to open the modal
 const openBuyModal = () => {
-  backdrop.classList.remove('is-hidden');
-  buyModal.classList.remove('is-hidden');
+  backdrop.classList.add('is-visible');
+  buyModal.classList.add('is-visible');
   document.body.classList.add('modal-open');
 };
 
-// Function to close the modal
 const closeBuyModal = () => {
-  backdrop.classList.add('is-hidden');
-  buyModal.classList.add('is-hidden');
+  backdrop.classList.remove('is-visible');
+  buyModal.classList.remove('is-visible');
   document.body.classList.remove('modal-open');
 };
 backdrop.addEventListener('click', function (event) {
@@ -23,9 +21,7 @@ backdrop.addEventListener('click', function (event) {
   }
 });
 
-// Event listener for the buy button
 buyButton.addEventListener('click', openBuyModal);
 mobileOpen.addEventListener('click', openBuyModal);
 
-// Event listener for the close button
 buyNowCloseButton.addEventListener('click', closeBuyModal);

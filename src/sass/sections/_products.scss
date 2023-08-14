@@ -71,6 +71,7 @@
   text-align: center;
   background-color: var(--card-accent);
   border-radius: 24px;
+  transition: all 0.5s ease;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 224px;
     height: 428px;
@@ -100,12 +101,6 @@
     margin-top: -153px;
   }
 }
-.eclipse:hover .back-side {
-  transform: rotate(0);
-}
-.eclipse:hover .front-side {
-  transform: rotateY(-180deg);
-}
 
 .choice-item:last-child {
   background-color: var(--text-accent-color);
@@ -130,12 +125,7 @@
     margin-top: -215px;
   }
 }
-.choice-img:hover .back-side {
-  transform: rotate(0);
-}
-.choice-img:hover .front-side {
-  transform: rotateY(-180deg);
-}
+
 .choice-name {
   font-weight: 700;
   font-size: 30px;
@@ -168,15 +158,24 @@
   width: 40px;
   display: inline-block;
   padding-bottom: 60px;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 20px;
   }
 }
 
-.front-side {
+.front-side,
+.back-side {
   backface-visibility: hidden;
+  // transition: transform 0.6s;
 }
+// .front-side {
+//   transform: perspective(600px) rotateY(0deg);
+// }
 
+.back-side {
+  transform: perspective(600px) rotateY(180deg);
+}
 .back-side {
   position: absolute;
   text-align: center;
@@ -184,17 +183,15 @@
   left: 0;
   width: 100%;
   padding: 0 15px;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
   transition: all 0.5s ease;
 }
 .choice-item:hover .back-side,
 .choice-item:focus .back-side {
-  transform: rotate(0);
+  transform: perspective(600px) rotate(0);
 }
 .choice-item:hover .front-side,
 .choice-item:focus .front-side {
-  transform: rotateY(-180deg);
+  transform: perspective(600px) rotateY(-180deg);
 }
 
 .doze-list {
@@ -294,9 +291,3 @@
     margin-top: 40px;
   }
 }
-// .choice-item:hover .back-side {
-//   transform: rotateY(-180deg);
-// }
-// .choice-item:hover .front-side {
-//   transform: rotate(0);
-// }
