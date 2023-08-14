@@ -60,31 +60,45 @@ body {
 .franchise-backdrop {
   position: fixed;
   z-index: 10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), visibility;
-
-  // transition: margin-top 2s ease-in-out 0.5s;
-  background-color: rgba(103, 155, 133, 0.4);
+  // top: 50%;
+  // left: 50%;
+  top: 0;
+  left: 0;
+  // transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  transition: 0.4s all;
+  opacity: 0;
+  // transition: opacity 0.8s ease 0s;
+  // transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), visibility;
+  background-color: rgba(86, 107, 98, 0.4);
 }
 
 .modal-open {
   overflow: hidden;
+  transition: 0.4s all;
+  .read-backdrop {
+    background-color: cornflowerblue;
+    opacity: 1;
+    transition: 0.4s all;
+  }
+  .read-modal {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.4s all;
+  }
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+// .is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
+
 .backdrop.is-hidden .modal,
 .read-backdrop.is-hidden .read-modal,
 .locations-backdrop.is-hidden .locations-modal,
 .franchise-backdrop.is-hidden .franchise-modal {
-  transform: translate(-50%, -50%) scale(0.7);
+  // transition: transform 0.8s ease 0s, opacity 0.8s ease 0s, visibility 0s 0.8s;
 }
 .modal,
 .read-modal,
@@ -93,7 +107,6 @@ body {
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: var(--light-text-color);
   width: 568px;
@@ -101,14 +114,16 @@ body {
   border-radius: 10px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: 0.8s all;
+  // transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and(min-width: 320px) and (max-width: 767px) {
     width: 280px;
     height: 100vh;
-    // z-index: 1000;
   }
 }
+
 .modal-close-btn,
 .read-more-close-btn,
 .locations-close-btn,
