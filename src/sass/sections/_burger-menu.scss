@@ -1,5 +1,6 @@
 .burger-menu {
   position: fixed;
+  z-index: 20;
   top: 0;
   background-color: var(--main-background);
   width: 100%;

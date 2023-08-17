@@ -1,7 +1,6 @@
 .hero {
   padding-top: 45px;
   background-color: var(--main-background);
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 40px;
   }
@@ -136,6 +135,7 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 152px;
     height: 152px;
+    z-index: 10;
   }
 }
 
@@ -246,4 +246,51 @@
     left: 30px;
     top: 40px;
   }
+}
+
+.dots-mob {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.dots-mob-left {
+  position: absolute;
+  left: -85px;
+  bottom: 0;
+}
+.dots-mob-right {
+  position: absolute;
+  bottom: 0;
+  left: 110px;
+}
+
+.cloud-wrapper {
+  position: relative;
+}
+.cloud-mob {
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.dots-tab {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.dots-tab-left {
+  position: absolute;
+  bottom: 0;
+  left: -420px;
+}
+.dots-tab-right {
+  position: absolute;
+  bottom: 0;
+  left: 170px;
 }

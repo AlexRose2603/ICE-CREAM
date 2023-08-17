@@ -1,7 +1,6 @@
 header {
   background-color: var(--main-background);
   margin-bottom: -1px;
-  // width: 100vw;
 }
 
 .navigation {
@@ -111,7 +110,11 @@ header {
   @media screen and (min-width: 1200px) {
     display: none;
   }
+  &:hover {
+    transform: scale(1.1);
+  }
 }
+
 .next-svg {
   rotate: 90deg;
 }
