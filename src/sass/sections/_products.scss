@@ -15,7 +15,6 @@
   line-height: 1.23;
   text-align: center;
   margin: 0 auto;
-  width: 330px;
   margin-bottom: 303px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -49,7 +48,7 @@
     flex-direction: column;
     align-items: center;
     gap: 93px;
-    margin-bottom: -30px;
+    margin-bottom: -105px;
   }
 }
 .choice-item:first-child {
@@ -67,6 +66,8 @@
 .choice-item {
   width: 370px;
   height: 535px;
+  display: inline-flex;
+  justify-content: space-between;
   position: relative;
   text-align: center;
   background-color: var(--card-accent);
@@ -145,23 +146,29 @@
   text-align: center;
   margin: auto;
   padding: 0 64px;
-
+  height: 140px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
     padding: 0 26px;
   }
+  @media screen and (max-width: 767px) {
+    padding: 0 40px;
+  }
 }
 .arrow-card {
   position: absolute;
-  margin-left: -15px;
-  bottom: -170px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
   width: 40px;
   display: inline-block;
   padding-bottom: 60px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 20px;
-    bottom: -130px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 20px;
   }
 }
 
@@ -172,6 +179,7 @@
 }
 .front-side {
   transform: rotateY(0deg);
+  position: relative;
 }
 
 .back-side {
