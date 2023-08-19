@@ -84,8 +84,10 @@
 .location-btn {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-bottom: 120px;
-  margin-bottom: -1px;
+  width: 196px;
+  margin: 0 auto -1px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 40px;
   }
@@ -97,6 +99,7 @@
 }
 .location-btn button {
   font-weight: 600;
+
   border-radius: 10px;
   font-size: 14px;
   line-height: 1.28;

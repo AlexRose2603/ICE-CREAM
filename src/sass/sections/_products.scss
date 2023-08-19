@@ -172,8 +172,6 @@
 }
 .front-side {
   transform: rotateY(0deg);
-
-  height: 100%;
 }
 
 .back-side {
@@ -195,6 +193,10 @@
 .choice-item:hover .front-side,
 .choice-item:focus .front-side {
   transform: perspective(600px) rotateY(-180deg);
+}
+.choice-item:hover .arrow-card,
+.choice-item:focus .arrow-card {
+  display: none;
 }
 
 .doze-list {
