@@ -215,9 +215,9 @@
 .flipped .back-side {
   transform: rotateY(0deg);
 }
-.flipped .arrow-card {
-  display: none;
-}
+// .flipped .arrow-card {
+//   display: none;
+// }
 .back-side {
   position: absolute;
   text-align: center;
@@ -231,10 +231,10 @@
   flex: 1 auto;
 }
 
-.front-side:hover .back-arrow-card,
-.front-side:focus .back-arrow-card {
-  display: none;
-}
+// .front-side:hover .back-arrow-card,
+// .front-side:focus .back-arrow-card {
+//   display: none;
+// }
 
 .doze-list {
   display: inline-flex;
@@ -323,20 +323,15 @@
   margin-top: 35px;
 }
 .back-arrow-card {
-  cursor: pointer;
   width: 40px;
-  position: absolute;
-  left: 43%;
-  bottom: -80px;
+  margin: 0 auto;
+  padding-right: 20px;
   padding-bottom: 60px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 20px;
-    bottom: -74px;
-    left: 37%;
+    margin-top: 35px;
   }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     padding-bottom: 10px;
-    left: 40%;
-    bottom: -45px;
   }
 }
