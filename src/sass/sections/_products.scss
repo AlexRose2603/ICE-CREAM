@@ -215,6 +215,9 @@
 .flipped .back-side {
   transform: rotateY(0deg);
 }
+.flipped .back-arrow-card {
+  display: none;
+}
 .back-side {
   position: absolute;
   text-align: center;
