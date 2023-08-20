@@ -8,12 +8,16 @@ const openBuyModal = () => {
   backdrop.classList.add('is-visible');
   buyModal.classList.add('is-visible');
   document.body.classList.add('modal-open');
+  document.body.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
 };
 
 const closeBuyModal = () => {
   backdrop.classList.remove('is-visible');
   buyModal.classList.remove('is-visible');
   document.body.classList.remove('modal-open');
+  document.body.style.overflow = '';
+  document.body.style.position = '';
 };
 backdrop.addEventListener('click', function (event) {
   if (event.target === backdrop) {
