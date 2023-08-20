@@ -1,2 +1,0 @@
-const e=document.querySelector(".locations-backdrop"),s=document.getElementById("modal-location"),t=document.querySelector(".locations-close-btn"),i=document.querySelector(".btn-link"),o=()=>{e.classList.remove("is-visible"),s.classList.remove("is-visible"),document.body.classList.remove("modal-open")};e.addEventListener("click",(function(s){s.target===e&&o()})),i.addEventListener("click",(()=>{e.classList.add("is-visible"),s.classList.add("is-visible"),document.body.classList.add("modal-open")})),t.addEventListener("click",o);
-//# sourceMappingURL=index.55486179.js.map
