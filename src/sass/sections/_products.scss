@@ -212,12 +212,11 @@
 .flipped .front-side {
   transform: perspective(700px) rotateY(180deg);
 }
+
 .flipped .back-side {
   transform: rotateY(0deg);
 }
-// .flipped .arrow-card {
-//   display: none;
-// }
+
 .back-side {
   position: absolute;
   text-align: center;

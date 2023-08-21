@@ -3,21 +3,20 @@ const readMoreModal = document.getElementById('read');
 const readMoreButton = document.querySelector('.read-more-btn');
 const readMoreCloseButton = document.querySelector('.read-more-close-btn');
 
+const htmlStyle = document.querySelector('html');
+
 const openReadMoreModal = () => {
   readBackdrop.classList.add('is-visible');
   readMoreModal.classList.add('is-visible');
   document.body.classList.add('modal-open');
-
-  document.body.style.overflow = 'hidden';
-  document.body.style.position = 'fixed';
+  htmlStyle.style.overflow = 'hidden';
 };
 
 const closeReadMoreModal = () => {
   readBackdrop.classList.remove('is-visible');
   readMoreModal.classList.remove('is-visible');
   document.body.classList.remove('modal-open');
-  document.body.style.overflow = '';
-  document.body.style.position = '';
+  htmlStyle.style.overflow = '';
 };
 
 readBackdrop.addEventListener('click', function (event) {

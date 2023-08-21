@@ -3,20 +3,20 @@ const franchiseModal = document.querySelector('.franchise-modal');
 const closeFranchiseBtn = document.querySelector('.franchise-close-btn');
 const franchiseBtn = document.querySelector('.franchise-btn');
 
+const htmlStyle = document.querySelector('html');
+
 const openFranchiseModal = () => {
   franchiseBackdrop.classList.add('is-visible');
   franchiseModal.classList.add('is-visible');
   document.body.classList.add('modal-open');
-  document.body.style.overflow = 'hidden';
-  document.body.style.position = 'fixed';
+  htmlStyle.style.overflow = 'hidden';
 };
 
 const closeFranchiseModal = () => {
   franchiseBackdrop.classList.remove('is-visible');
   franchiseModal.classList.remove('is-visible');
   document.body.classList.remove('modal-open');
-  document.body.style.overflow = '';
-  document.body.style.position = '';
+  htmlStyle.style.overflow = '';
 };
 
 franchiseBackdrop.addEventListener('click', function (event) {
